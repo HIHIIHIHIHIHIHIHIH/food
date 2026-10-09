@@ -1,19 +1,23 @@
-name = "food"
-price = 7.2
-amounts = 5
-allsold = False
-shopname = "Cit"
-print(type(name))
-print(type(price))
-print(type(amounts))
-print(type(allsold))
-print("Todays order is: " + name)
-print("Total Price", price * amounts)
-print("Sale price: ", price - 0.25)
-print("Double Price", amounts * 2)
-print("Price under 2?", price < 2)
-print("More then 5 in stock", amounts > 5)
-print("The price exact 1.50", price == 1.50)
-print(shopname)
-print("The lenght of the shop name is", len(shopname))
-print("The first letter of the shop name is", shopname[0])
+ClassmateNames = ["Josh", "Eugene", "Quandale Dingle", "Yolanda", "Mike", "Emre"]
+print(ClassmateNames, len(ClassmateNames))
+print(ClassmateNames[0], ClassmateNames[5])
+print(ClassmateNames[0:3])
+ClassmateNames.append("farts")
+print(ClassmateNames[6])
+ClassmateNames.remove("farts")
+print(ClassmateNames.sort())
+dictionary = {
+    "Teacher1": "Hates teaching,",
+    "Mathematics Teacher": "Likes doing math",
+    "Mr.Subsitute": "He doesnt care",
+    "Science Maniac": "The FDA does not like him"
+}
+
+print(dictionary)
+dictionary["Mathematics Teacher"]="mathmaniacs@maniacteacher.lol"
+dictionary["Teacher1"]="sudo apt install loves teaching"
+print(dictionary)
+list = ["1", "2", "3", "4"]
+name = ["Mike", "Micheal", "Efran", "Stevens"]
+list1 = dict(zip(list, name))
+print(list1)
